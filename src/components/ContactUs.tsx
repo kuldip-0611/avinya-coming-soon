@@ -7,7 +7,6 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
-    console.log("inside submit");
     e.preventDefault();
     if (!message) {
       toast.error("please enter message");
@@ -35,7 +34,7 @@ export default function ContactForm() {
 
         <Button
           type="submit"
-          className="p-3 bg-gradient-to-r from-primary to-secondary text-white rounded-circle transform scale-110"
+          className="p-3 bg-gradient-to-r from-primary border-0 to-secondary text-white rounded-circle transform scale-110"
           style={{ background: "linear-gradient(90deg, #466645, #1C3628)" }}
         >
           <FaPaperPlane color="white" />
