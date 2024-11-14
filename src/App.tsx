@@ -5,7 +5,7 @@ import impactImage from "./assets/images/ourImpact.jpeg";
 import "./App.css";
 import ContactUsForm from "./components/ContactUs";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
-import { FaInstagram, FaPhone, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaPhoneAlt, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Col
             xs={12}
             lg={8}
-            className="d-flex flex-column align-items-start gap-4 order-2 order-lg-1"
+            className="d-flex flex-column align-items-center gap-4 order-2 order-lg-1"
           >
             <div className="mb-4 logo-responsive">
               <Image
@@ -31,22 +31,22 @@ function App() {
               />
             </div>
 
-            <h1 className="text-center text-lg-start w-100">
-              <span className=" fw-bold heading-text">AVINYA</span> is coming
+            <h1 className="text-center w-100">
+              <span className="fw-bold heading-text">AVINYA</span> is coming
               soon
             </h1>
 
             <h3 className="description-text">
-              We’re working hard behind the scenes to bring you a new standard
-              in innovative plant-based vegan leather.
+              We’re working hard behind the scenes to bring you <br /> a new
+              standard in innovative plant-based vegan leather.
             </h3>
-            <h3 className="description-text w-100">
+            <h3 className="description-text text-center w-100">
               Thank you for your patience as we finalize our digital home.
             </h3>
 
             <ContactUsForm />
 
-            <div className="d-flex justify-content-center justify-content-lg-start gap-3 mt-4 flex-wrap">
+            <div className="d-flex justify-content-center gap-3 mt-4 flex-wrap">
               <Button
                 href="https://www.instagram.com/avinya_leather/"
                 target="_blank"
@@ -80,7 +80,7 @@ function App() {
                 className="text-black hover:text-primary"
                 style={{ textDecoration: "none" }}
               >
-                <FaPhone /> (+91) 9426166486
+                <FaPhoneAlt /> (+91) 9426166486
               </Button>
               <Button
                 href="tel:+6351169077"
@@ -88,7 +88,7 @@ function App() {
                 className="text-black hover:text-primary"
                 style={{ textDecoration: "none" }}
               >
-                <FaPhone /> (+91) 6351169077
+                <FaPhoneAlt /> (+91) 6351169077
               </Button>
             </div>
           </Col>
